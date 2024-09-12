@@ -7,17 +7,20 @@
 ### На Mac OS
 [Инструкция по установке](https://github.com/amelinvladimir/docker_course/blob/main/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20Docker%20%D0%BD%D0%B0%20Mac%20OS/README.md)
 
+## Шаг 2. Запуск учебной бд
 
-## Установка dbt
+## Шаг 3. Установка python, если не установлен
+
+## Шаг4. Установка dbt
 ### Установка dbt на Windows
 ### Установка dbt на Mac OS
 
-## Установка Visual Studio Code (VS Code)
+## Шаг 5. Установка Visual Studio Code (VS Code), если не установлен
 ### Windows
 ### Mac OS
 
-## Установка git
+## Шаг 6. Установка git, если не установлен
 ### Windows
 ### Mac OS
 
-## Скачивание и разворот учебного проекта
+## Шаг 7. Скачивание и разворот учебного проекта
