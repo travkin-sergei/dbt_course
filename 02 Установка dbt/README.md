@@ -9,7 +9,8 @@
 
 ## Шаг 2. Установка Visual Studio Code (VS Code), если не установлен
 
-### Windows
+<details>
+<summary>Windows</summary>
 
 #### Шаг 1. Скачиваем дистрибутив с [сайта](https://code.visualstudio.com/) и запускаем установку.
 #### Шаг 2. При устанвоке оставляем все настройки по умолчанию (или делайте изменения по своему усмотрению).
@@ -17,6 +18,7 @@
 ![image](https://github.com/user-attachments/assets/23d4ada8-1426-4694-b747-9f3267169dd4)
 
 Установка Visual Studio Code успешно завершена.
+</details>
 
 ### Mac OS
 
