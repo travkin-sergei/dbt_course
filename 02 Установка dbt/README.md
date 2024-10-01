@@ -14,7 +14,7 @@
 #### Шаг 3. Запускаем Visual Studio Code.
 ![image](https://github.com/user-attachments/assets/23d4ada8-1426-4694-b747-9f3267169dd4)
 
-## Шаг 2. Запуск учебной бд
+## Этап 3. Запуск учебной бд
 
 #### Шаг 1. Откройте VS Code.
 #### Шаг 2. Откройте окно с терминалом в VS Code Если оно не открыто.
@@ -34,8 +34,20 @@ User: postgres
 Password: mysecretpassword
 ````
 
+## Этап 4. Установка python, если не установлен
 
-## Шаг 3. Установка python, если не установлен
+#### Шаг 1. Скачиваем дистрибутив с [официального сайта python](https://www.python.org/downloads/)
+#### Шаг 2. Запускаем установку из дистрибутива.
+При установке на ОС Windows поставьте галочку в пункте "Add python.exe to PATH":
+![image](https://github.com/user-attachments/assets/e8199c37-3d2a-400d-bd0a-91a190e2e843)
+#### Шаг 3. Проверяем установку.
+Откройте PowerShell или окно Терминала и выполните команду 
+````console
+python
+````
+Вы должны увидеть сообщение похожее на:
+![image](https://github.com/user-attachments/assets/1b714705-c91a-4905-b5c5-f2af08729317)
+
 
 ## Шаг4. Установка dbt
 ### Установка dbt на Windows
