@@ -53,7 +53,7 @@ python
 
 #### Шаг 1. Открыть окно терминала.
 
-#### Шаг 2. (является рекомендованным, но не обязательным) Создаем виртуальное окружение python, выполнив команду
+#### Шаг 2. (выполните этот шаг, если вам может понадобится другая версия python и другой набор библиотек в работе) Создаем виртуальное окружение python, выполнив команду
 ````console
 python -m venv dbt-env
 ````
@@ -64,7 +64,15 @@ source dbt-env/bin/activate			# для Mac и Linux OR
 dbt-env\Scripts\activate			# для Windows
 ````
 
+#### Шаг 3. Устанавливаем dbt для работы с postgres
 
+````console
+python -m pip install dbt-postgres
+````
+при установке на Windows может понадобится дополнительно вызвать команду 
+````console
+python.exe -m pip install --upgrade pip
+````
 
 ### Установка dbt на Windows
 ### Установка dbt на Mac OS
