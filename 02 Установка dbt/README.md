@@ -16,7 +16,24 @@
 
 ## Шаг 2. Запуск учебной бд
 
-### На Windows
+#### Шаг 1. Откройте VS Code.
+#### Шаг 2. Откройте окно с терминалом в VS Code Если оно не открыто.
+![image](https://github.com/user-attachments/assets/1f9b1804-1f8e-4265-bee8-54d02cc4362b)
+![image](https://github.com/user-attachments/assets/da36a831-8d93-406c-97e4-18838c91bfd2)
+#### Шаг 3. Запустите Docker Desktop, если он не запущен.
+#### Шаг 4. В окне терминала выполните команду 
+````console
+docker run -p 4000:5432 -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword amelinvd/postgres_medium_db
+````
+Будет запущена СУБД Postgres, достпная для подключения по следующим параметрам:
+````console
+Host: localhost
+Port: 4000
+Database: demo
+User: postgres
+Password: mysecretpassword
+````
+
 
 ## Шаг 3. Установка python, если не установлен
 
