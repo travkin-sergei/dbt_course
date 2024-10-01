@@ -49,7 +49,7 @@ python
 ![image](https://github.com/user-attachments/assets/1b714705-c91a-4905-b5c5-f2af08729317)
 
 
-## Шаг4. Установка dbt
+## Этап 5. Установка dbt
 ### Установка dbt на Windows
 ### Установка dbt на Mac OS
 
