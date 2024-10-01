@@ -34,7 +34,7 @@ User: postgres
 Password: mysecretpassword
 ````
 
-## Этап 4. Установка python, если не установлен
+## Этап 4. Установка python, если он не установлен
 
 #### Шаг 1. Скачиваем дистрибутив с [официального сайта python](https://www.python.org/downloads/)
 #### Шаг 2. Запускаем установку из дистрибутива.
@@ -73,9 +73,6 @@ python -m pip install dbt-postgres
 ````console
 python.exe -m pip install --upgrade pip
 ````
-
-### Установка dbt на Windows
-### Установка dbt на Mac OS
 
 ## Шаг 6. Установка git, если не установлен
 ### Windows
