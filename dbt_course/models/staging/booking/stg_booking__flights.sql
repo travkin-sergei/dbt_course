@@ -11,3 +11,5 @@ SELECT
     actual_arrival
 FROM 
     {{ source('staging', 'flights') }}
+
+{{limit_data_days('scheduled_arrival', 3000)}}
