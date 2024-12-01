@@ -1,3 +1,8 @@
+{{
+  config(
+    materialized = 'view',
+    )
+}}
 SELECT 
     airport_code, 
     airport_name, 
