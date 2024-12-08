@@ -69,7 +69,11 @@ python3 -m pip install dbt-postgres
 
 ## Этап 4. Скачивание учебного проекта
 
-#### Шаг 1. 
+#### Шаг 1. Скачиваем код проекта
+````console
+# Windows
+git clone 
+````
 
 
 
