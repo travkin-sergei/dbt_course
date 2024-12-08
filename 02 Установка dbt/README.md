@@ -9,20 +9,21 @@
 #### Шаг 3. Проверяем установку.
 Откройте PowerShell или окно Терминала и выполните команду 
 
-Windows
 ````console
+# Windows
 python --version
 ````
 
-Mac OS
 ````console
+# Mac OS
 python3 --version
 ````
+
 Вы должны увидеть сообщение похожее на:
 ![image](https://github.com/user-attachments/assets/1b714705-c91a-4905-b5c5-f2af08729317)
 
 
-## Этап 5. Установка dbt
+## Этап 2. Установка dbt
 
 #### Шаг 1. Открыть окно терминала.
 
