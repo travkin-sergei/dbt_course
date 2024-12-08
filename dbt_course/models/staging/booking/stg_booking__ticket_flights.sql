@@ -1,6 +1,6 @@
 {{
   config(
-    materialized = 'view',
+    materialized = 'table',
     )
 }}
 SELECT 
@@ -9,4 +9,4 @@ SELECT
     fare_conditions,
     amount
 FROM 
-    {{ source('staging', 'ticket_flights') }}
+    {{ source('demo_src', 'ticket_flights') }}

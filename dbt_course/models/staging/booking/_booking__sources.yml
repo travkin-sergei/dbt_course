@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: staging
+  - name: demo_src
     tables:
       - name: aircrafts
         description: Модели самолетов

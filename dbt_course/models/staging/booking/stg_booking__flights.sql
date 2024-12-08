@@ -1,8 +1,11 @@
 {{
   config(
-    materialized = 'view',
+    materialized = 'incremental',
+    unique_key='flight_id',
+    incremental_strategy='delete+insert',
     )
-}}
+}} 
+{% set incremental_days = 3000 %} 
 SELECT 
     flight_id, 
     flight_no, 
@@ -15,6 +18,14 @@ SELECT
     actual_departure, 
     actual_arrival
 FROM 
-    {{ source('staging', 'flights') }}
+    {{ source('demo_src', 'flights') }}
 
-{{limit_data_days('scheduled_arrival', 3000)}}
+{% if is_incremental() %}
+
+WHERE
+    scheduled_departure >= current_date - {{ incremental_days }}
+    OR scheduled_arrival >= current_date - {{ incremental_days }}
+    OR actual_departure >= current_date - {{ incremental_days }}
+    OR actual_arrival >= current_date - {{ incremental_days }}
+
+{% endif %}

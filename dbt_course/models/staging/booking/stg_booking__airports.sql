@@ -1,6 +1,6 @@
 {{
   config(
-    materialized = 'view',
+    materialized = 'table',
     )
 }}
 SELECT 
@@ -10,4 +10,4 @@ SELECT
     coordinates, 
     timezone
 FROM 
-    {{ source('staging', 'airports') }}
+    {{ source('demo_src', 'airports') }}

@@ -1,11 +1,8 @@
 {{
   config(
-    materialized = 'incremental',
-    unique_key='flight_id',
-    incremental_strategy='delete+insert',
+    materialized = 'view',
     )
 }} 
-{% set incremental_days = 3000 %} 
 select
     flight_id, 
     flight_no, 
@@ -19,13 +16,3 @@ select
     actual_arrival
 from
     {{ ref('stg_booking__flights') }}
-
-{% if is_incremental() %}
-
-where 
-    scheduled_departure >= current_date - {{ incremental_days }}
-    or scheduled_arrival >= current_date - {{ incremental_days }}
-    or actual_departure >= current_date - {{ incremental_days }}
-    or actual_arrival >= current_date - {{ incremental_days }}
-
-{% endif %}

@@ -1,6 +1,6 @@
 {{
   config(
-    materialized = 'view',
+    materialized = 'table',
     )
 }}
 SELECT 
@@ -9,4 +9,4 @@ SELECT
     boarding_no, 
     seat_no
 FROM 
-    {{ source('staging', 'boarding_passes') }}
+    {{ source('demo_src', 'boarding_passes') }}

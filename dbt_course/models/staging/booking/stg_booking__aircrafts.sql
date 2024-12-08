@@ -1,10 +1,10 @@
 {{
   config(
-    materialized = 'view',
+    materialized = 'table',
     )
 }}
 SELECT 
     aircraft_code, 
     model
 FROM 
-    {{ source('staging', 'aircrafts') }}
+    {{ source('demo_src', 'aircrafts') }}
