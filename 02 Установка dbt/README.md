@@ -107,6 +107,7 @@ port: 4001
 login: postgres
 password: mysecretpassword
 ````
+Поставить галочку в поле "Показать все базы данных"
 
 ## Этап 2. Установка Visual Studio Code (VS Code), если не установлен
 
