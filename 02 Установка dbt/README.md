@@ -145,6 +145,22 @@ Enter # подтвердить путь сохранения
 Ctrl + X # выйти
 ````
 
+## Этап 9. Собрать dbt проект
+
+#### Шаг 1. Открыть терминал или powershell
+#### Шаг 2. Перейти в папку dbt_course/dbt_course/ проекта, скачанного с git
+
+Если выполнить команду 
+````console
+ls
+````
+Вы должны увидеть следующие папки и файлы
+````console
+README.md		dbt_project.yml		models			seeds			tests
+analyses		logs			package-lock.yml	snapshots
+dbt_packages		macros			packages.yml		target
+````
+
 ## Этап 2. Установка Visual Studio Code (VS Code), если не установлен
 
 #### Шаг 1. Скачиваем дистрибутив с [сайта](https://code.visualstudio.com/) и запускаем установку.
