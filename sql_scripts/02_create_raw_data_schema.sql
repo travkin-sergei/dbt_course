@@ -1,3 +1,5 @@
+CREATE SCHEMA IF NOT EXISTS staging;
+
 DROP TABLE IF EXISTS staging.airports;
 CREATE TABLE staging.airports (
 	airport_code bpchar(3) NOT NULL,
@@ -38,7 +40,8 @@ DROP TABLE IF EXISTS staging.ticket_flights;
 CREATE TABLE staging.ticket_flights (
 	ticket_no bpchar(13) NOT NULL,
 	flight_id int4 NOT NULL,
-	fare_conditions varchar(10) NOT NULL
+	fare_conditions varchar(10) NOT NULL,
+	amount numeric(10, 2)
 );
 
 DROP TABLE IF EXISTS staging.boarding_passes;

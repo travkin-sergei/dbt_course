@@ -1,12 +1,12 @@
 {{
   config(
-    materialized = 'view',
+    materialized = 'table'
     )
-}}
+}} 
 SELECT 
     ticket_no, 
     flight_id, 
     fare_conditions,
     amount
 FROM 
-    {{ source('staging', 'ticket_flights') }}
+    {{ ref('stg_booking__ticket_flights') }}
