@@ -8,8 +8,15 @@
 ![image](https://github.com/user-attachments/assets/e8199c37-3d2a-400d-bd0a-91a190e2e843)
 #### Шаг 3. Проверяем установку.
 Откройте PowerShell или окно Терминала и выполните команду 
+
+Windows
 ````console
-python
+python --version
+````
+
+Mac OS
+````console
+python3 --version
 ````
 Вы должны увидеть сообщение похожее на:
 ![image](https://github.com/user-attachments/assets/1b714705-c91a-4905-b5c5-f2af08729317)
