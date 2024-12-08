@@ -91,7 +91,6 @@ git clone git@github.com:amelinvladimir/dbt_course.git
 ## Этап 7. Запуск контейнера с БД учебного проекта
 
 #### Шаг 1. Открыть терминал или powershell
-
 #### Шаг 2. Выполнить команду запуска образа
 
 ````console
@@ -108,6 +107,41 @@ login: postgres
 password: mysecretpassword
 ````
 Поставить галочку в поле "Показать все базы данных"
+
+## Этап 8. Создать файл profiles.yml с указанием параметров подключения к БД для dbt
+
+#### Шаг 1. Открыть терминал или powershell
+#### Шаг 2. Создать файл profiles.yml, выполнив команду:
+````console
+touch ~/.dbt/profiles.yml
+````
+#### Шаг 3. Открыть на редактирование файл, выполнив команду:
+````console
+nano ~/.dbt/profiles.yml
+````
+#### Шаг 4. Указать параметры подключения к БД
+
+скопировать текст:
+````console
+dbt_course:
+  outputs:
+    dev:
+      dbname: dbt_course
+      host: localhost
+      pass: mysecretpassword
+      port: 4001
+      schema: bookings_dbt
+      threads: 4
+      type: postgres
+      user: postgres
+  target: dev
+````
+
+В окне терминала последовательно нажать следующие комбинации клавиш:
+Ctrl + V # вставить текст
+Ctrl + O # сохранить
+Enter # подтвердить путь сохранения
+Ctrl + X # выйти
 
 ## Этап 2. Установка Visual Studio Code (VS Code), если не установлен
 
