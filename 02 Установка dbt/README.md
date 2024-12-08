@@ -13,7 +13,6 @@
 # Windows
 python --version
 ````
-
 ````console
 # Mac OS
 python3 --version
@@ -29,13 +28,22 @@ python3 --version
 
 #### Шаг 2. (выполните этот шаг, если вам может понадобится другая версия python и другой набор библиотек в работе) Создаем виртуальное окружение python, выполнив команду
 ````console
+# Windows
 python -m venv dbt-env
+````
+````console
+# Mac OS
+python3 -m venv dbt-env
 ````
 
 Активируем виртуальное окружение при каждом открытии терминала командой:
 ````console
-source dbt-env/bin/activate			# для Mac и Linux OR
-dbt-env\Scripts\activate			# для Windows
+# Windows
+dbt-env\Scripts\activate
+````
+````console
+# Mac OS
+source dbt-env/bin/activate
 ````
 
 #### Шаг 3. Устанавливаем dbt для работы с postgres
