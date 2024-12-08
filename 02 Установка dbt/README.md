@@ -5,6 +5,7 @@
 #### Шаг 1. Скачиваем дистрибутив с [официального сайта python](https://www.python.org/downloads/)
 #### Шаг 2. Запускаем установку из дистрибутива.
 При установке на ОС Windows поставьте галочку в пункте "Add python.exe to PATH":
+
 ![image](https://github.com/user-attachments/assets/e8199c37-3d2a-400d-bd0a-91a190e2e843)
 #### Шаг 3. Проверяем установку.
 Откройте PowerShell или окно Терминала и выполните команду 
