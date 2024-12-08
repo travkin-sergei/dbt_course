@@ -81,12 +81,32 @@ git clone git@github.com:amelinvladimir/dbt_course.git
 Смотри в первом этапе [инструкции](https://github.com/amelinvladimir/sql_course/blob/main/%D0%A3%D1%80%D0%BE%D0%BA%201.2%20%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%9F%D0%9E/README.md)
 
 
-## Этап 6. Установка Docker Desktop, если не установлен
+## Этап 6. Установка Docker Desktop (если не установлен)
 
 ### На Windows
 [Инструкция по установке](https://github.com/amelinvladimir/docker_course/blob/main/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20Docker%20%D0%BD%D0%B0%20Windows%2010/README.md)
 ### На Mac OS
 [Инструкция по установке](https://github.com/amelinvladimir/docker_course/blob/main/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20Docker%20%D0%BD%D0%B0%20Mac%20OS/README.md)
+
+## Этап 7. Запуск контейнера с БД учебного проекта
+
+#### Шаг 1. Открыть терминал или powershell
+
+#### Шаг 2. Выполнить команду запуска образа
+
+````console
+docker run --name dbt-course-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 4001:5432 -d dbt_course_postgres_db
+````
+
+СУБД запущена. С помощью DBeaver можно подключиться к БД, используя следующие параметры
+````console
+тип БД: PostgreSQL
+host: localhost
+port: 4001
+Имя БД: postgres
+login: postgres
+password: mysecretpassword
+````
 
 ## Этап 2. Установка Visual Studio Code (VS Code), если не установлен
 
