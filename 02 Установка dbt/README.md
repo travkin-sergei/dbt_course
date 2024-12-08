@@ -49,11 +49,17 @@ source dbt-env/bin/activate
 #### Шаг 3. Устанавливаем dbt для работы с postgres
 
 ````console
+# Windows
 python -m pip install dbt-postgres
 ````
 при установке на Windows может понадобится дополнительно вызвать команду 
 ````console
 python.exe -m pip install --upgrade pip
+````
+
+````console
+# Mac OS
+python3 -m pip install dbt-postgres
 ````
 
 ## Шаг 6. Установка git, если не установлен
