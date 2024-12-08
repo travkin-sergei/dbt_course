@@ -160,30 +160,18 @@ README.md		dbt_project.yml		models			seeds			tests
 analyses		logs			package-lock.yml	snapshots
 dbt_packages		macros			packages.yml		target
 ````
+#### Шаг 3. Запустить сборку проекта, выполнив команду
+````console
+dbt build
+````
 
-## Этап 2. Установка Visual Studio Code (VS Code), если не установлен
+Если установка прошла успешно, то вы увидите сообщение:
+![image](https://github.com/user-attachments/assets/dd6f8771-687f-4fb1-a1f8-7a038559050a)
+
+
+## Этап 10. Установка Visual Studio Code (VS Code), если не установлен
 
 #### Шаг 1. Скачиваем дистрибутив с [сайта](https://code.visualstudio.com/) и запускаем установку.
 #### Шаг 2. При устанвоке оставляем все настройки по умолчанию (или делайте изменения по своему усмотрению).
 #### Шаг 3. Запускаем Visual Studio Code.
 ![image](https://github.com/user-attachments/assets/23d4ada8-1426-4694-b747-9f3267169dd4)
-
-## Этап 3. Запуск учебной бд
-
-#### Шаг 1. Откройте VS Code.
-#### Шаг 2. Откройте окно с терминалом в VS Code Если оно не открыто.
-![image](https://github.com/user-attachments/assets/1f9b1804-1f8e-4265-bee8-54d02cc4362b)
-![image](https://github.com/user-attachments/assets/da36a831-8d93-406c-97e4-18838c91bfd2)
-#### Шаг 3. Запустите Docker Desktop, если он не запущен.
-#### Шаг 4. В окне терминала выполните команду 
-````console
-docker run -p 4000:5432 -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword amelinvd/postgres_medium_db
-````
-Будет запущена СУБД Postgres, достпная для подключения по следующим параметрам:
-````console
-Host: localhost
-Port: 4000
-Database: demo
-User: postgres
-Password: mysecretpassword
-````
