@@ -1,40 +1,6 @@
 # Установка dbt и разворот учебного проекта на локальном компьютере
 
-## Этап 1. Установка Docker Desktop, если не установлен
-
-### На Windows
-[Инструкция по установке](https://github.com/amelinvladimir/docker_course/blob/main/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20Docker%20%D0%BD%D0%B0%20Windows%2010/README.md)
-### На Mac OS
-[Инструкция по установке](https://github.com/amelinvladimir/docker_course/blob/main/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20Docker%20%D0%BD%D0%B0%20Mac%20OS/README.md)
-
-## Этап 2. Установка Visual Studio Code (VS Code), если не установлен
-
-#### Шаг 1. Скачиваем дистрибутив с [сайта](https://code.visualstudio.com/) и запускаем установку.
-#### Шаг 2. При устанвоке оставляем все настройки по умолчанию (или делайте изменения по своему усмотрению).
-#### Шаг 3. Запускаем Visual Studio Code.
-![image](https://github.com/user-attachments/assets/23d4ada8-1426-4694-b747-9f3267169dd4)
-
-## Этап 3. Запуск учебной бд
-
-#### Шаг 1. Откройте VS Code.
-#### Шаг 2. Откройте окно с терминалом в VS Code Если оно не открыто.
-![image](https://github.com/user-attachments/assets/1f9b1804-1f8e-4265-bee8-54d02cc4362b)
-![image](https://github.com/user-attachments/assets/da36a831-8d93-406c-97e4-18838c91bfd2)
-#### Шаг 3. Запустите Docker Desktop, если он не запущен.
-#### Шаг 4. В окне терминала выполните команду 
-````console
-docker run -p 4000:5432 -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword amelinvd/postgres_medium_db
-````
-Будет запущена СУБД Postgres, достпная для подключения по следующим параметрам:
-````console
-Host: localhost
-Port: 4000
-Database: demo
-User: postgres
-Password: mysecretpassword
-````
-
-## Этап 4. Установка python, если он не установлен
+## Этап 1. Установка python, если он не установлен
 
 #### Шаг 1. Скачиваем дистрибутив с [официального сайта python](https://www.python.org/downloads/)
 #### Шаг 2. Запускаем установку из дистрибутива.
@@ -80,3 +46,41 @@ python.exe -m pip install --upgrade pip
 #### Шаг 2. Установить git из скачанного дистрибутива.
 
 ## Шаг 7. Скачивание и разворот учебного проекта
+
+
+
+
+
+## Этап 1. Установка Docker Desktop, если не установлен
+
+### На Windows
+[Инструкция по установке](https://github.com/amelinvladimir/docker_course/blob/main/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20Docker%20%D0%BD%D0%B0%20Windows%2010/README.md)
+### На Mac OS
+[Инструкция по установке](https://github.com/amelinvladimir/docker_course/blob/main/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20Docker%20%D0%BD%D0%B0%20Mac%20OS/README.md)
+
+## Этап 2. Установка Visual Studio Code (VS Code), если не установлен
+
+#### Шаг 1. Скачиваем дистрибутив с [сайта](https://code.visualstudio.com/) и запускаем установку.
+#### Шаг 2. При устанвоке оставляем все настройки по умолчанию (или делайте изменения по своему усмотрению).
+#### Шаг 3. Запускаем Visual Studio Code.
+![image](https://github.com/user-attachments/assets/23d4ada8-1426-4694-b747-9f3267169dd4)
+
+## Этап 3. Запуск учебной бд
+
+#### Шаг 1. Откройте VS Code.
+#### Шаг 2. Откройте окно с терминалом в VS Code Если оно не открыто.
+![image](https://github.com/user-attachments/assets/1f9b1804-1f8e-4265-bee8-54d02cc4362b)
+![image](https://github.com/user-attachments/assets/da36a831-8d93-406c-97e4-18838c91bfd2)
+#### Шаг 3. Запустите Docker Desktop, если он не запущен.
+#### Шаг 4. В окне терминала выполните команду 
+````console
+docker run -p 4000:5432 -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword amelinvd/postgres_medium_db
+````
+Будет запущена СУБД Postgres, достпная для подключения по следующим параметрам:
+````console
+Host: localhost
+Port: 4000
+Database: demo
+User: postgres
+Password: mysecretpassword
+````
