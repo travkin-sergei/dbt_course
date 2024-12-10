@@ -9,7 +9,7 @@
         target_schema = snapshot_schema,
         unique_key = 'airport_code',
         strategy = 'check',
-        dbt_valid_to_current = 'to_date(\'9999-12-31\')',
+        dbt_valid_to_current = '\'9999-12-31\'::date',
         check_cols = ['airport_name','city','coordinates','timezone']
     )
 
