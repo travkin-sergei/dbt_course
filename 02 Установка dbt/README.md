@@ -74,7 +74,7 @@ python3 -m pip install dbt-postgres
 Откройте терминал и перейдите в папку, в которую хотите скачать проект.
 Выполните команду:
 ````console
-git clone git@github.com:amelinvladimir/dbt_course.git
+git clone https://github.com/amelinvladimir/dbt_course.git
 ````
 
 ## Этап 5. Установка DBeaver (если не установлен)
