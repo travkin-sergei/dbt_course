@@ -20,7 +20,7 @@ select
     case
         when count(*) over(partition by aircraft_code) = 1 
         then null
-        else now()::timestamp without time zone
+        else now()::timestamp
     end as dbt_valid_from_custom
 from {{ ref('stg_booking__aircrafts') }}
 
