@@ -164,6 +164,9 @@ dbt_packages		macros			packages.yml		target
 #### Шаг 3. Запустить сборку проекта, выполнив команду
 ````console
 dbt deps
+````
+и затем
+````console
 dbt build
 ````
 
