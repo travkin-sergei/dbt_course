@@ -95,7 +95,7 @@ git clone https://github.com/amelinvladimir/dbt_course.git
 #### Шаг 2. Выполнить команду запуска образа
 
 ````console
-docker run --name dbt-course-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 4001:5432 -d dbt_course_postgres_db
+docker run --name dbt-course-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 4001:5432 -d amelinvd/dbt_course_postgres_db
 ````
 
 СУБД запущена. С помощью DBeaver можно подключиться к БД, используя следующие параметры
