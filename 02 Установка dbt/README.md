@@ -194,3 +194,5 @@ dbt build
 ![image](https://github.com/user-attachments/assets/3af73581-a7e6-4623-b7db-f195578acee8)
 
 #### Шаг 3. Если плагин запросит выбрать версию python, то выберите последнюю установленную версию.
+
+## Этап 12. Установить расширение "Power User for dbt" в Visual Code
