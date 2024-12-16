@@ -216,3 +216,56 @@ dbt build
 
 ## Этап 13. Выбираем версию python для работы с проектом
 
+#### Шаг 0. Проверка, нужно ли дополнительно настраивать python в VS Code
+
+Открываем терминал 
+![image](https://github.com/user-attachments/assets/ca1ef146-21ac-406d-94fa-cbd1c4742206)
+
+Выполняем команду 
+````console
+dbt --version
+````
+
+Если мы видим результат подобный этому, то следующие шаги нам выполнять не нужно
+![image](https://github.com/user-attachments/assets/1c4eee73-c556-406d-b72a-de9afd213c24)
+
+#### Шаг 1. Открываем расширение Python
+![image](https://github.com/user-attachments/assets/c91241b6-4626-4ca8-a0e0-0cc896b3c163)
+
+#### Шаг 2. Раскрываем список "Global" и видим все версии Python, установленные на ПК
+![image](https://github.com/user-attachments/assets/906dc532-dcff-4d62-9663-a438a6d57075)
+
+#### Шаг 3. Выбираем Python которая будет использована при работе с проектом
+Для этого жмем на звездочку и выбранной версии
+![image](https://github.com/user-attachments/assets/d51b2f93-b1ad-414e-a828-3cd4446ff4f3)
+
+#### Шаг 4. Проверяем корректность установки dbt в данной версии Python
+Жмем на значок "Консоли" рядом с версией pyhton, которую мы хотим использовать для работы и откроется окно Терминала
+![image](https://github.com/user-attachments/assets/a510e2bd-068e-4a79-b2ce-395902724aae)
+
+В окне терминала выполняем команду 
+
+````console
+dbt --version
+````
+
+Если увидим сообщение, как на скриншоте с выводом версии dbt библиотеки, то этап успешно завершен
+![image](https://github.com/user-attachments/assets/b05d4c45-3aa9-46ed-921e-4bf318fd9284)
+
+
+Если видим ошибку, как на скриншоте, то выполняем следующий шаг 
+![image](https://github.com/user-attachments/assets/ac77cc6a-3d35-4aad-9505-f537545f4e20)
+
+Выполняем команду 
+````console
+# На Windows
+python -m pip install dbt-postgres
+
+# На Mac OS
+python3 -m pip install dbt-postgres
+````
+
+Вновь выполним в окне терминала команду и теперь мы должны увидеть номер версии установленного dbt
+````console
+dbt --version
+````
