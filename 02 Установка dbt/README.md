@@ -114,11 +114,19 @@ password: mysecretpassword
 #### Шаг 1. Открыть терминал или powershell
 #### Шаг 2. Создать файл profiles.yml, выполнив команду:
 ````console
+# Mac OS
 touch ~/.dbt/profiles.yml
+
+# Win PowerShell
+New-Item ~/.dbt/profiles.yml
 ````
 #### Шаг 3. Открыть на редактирование файл, выполнив команду:
 ````console
+# Mac OS
 nano ~/.dbt/profiles.yml
+
+# Win PowerShell
+notepad.exe profiles.yml
 ````
 #### Шаг 4. Указать параметры подключения к БД
 
@@ -138,6 +146,7 @@ dbt_course:
   target: dev
 ````
 
+##### Для Mac OS
 В окне терминала последовательно нажать следующие комбинации клавиш:
 ````console
 Ctrl + V # вставить текст
@@ -145,6 +154,9 @@ Ctrl + O # сохранить
 Enter # подтвердить путь сохранения
 Ctrl + X # выйти
 ````
+
+##### Для Windows
+Вставить текст в блокноте, сохранить и закрыть текстовый редактор.
 
 ## Этап 9. Собрать dbt проект
 
